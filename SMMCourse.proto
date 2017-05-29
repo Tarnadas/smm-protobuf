@@ -1,0 +1,24 @@
+syntax = 'proto3';
+
+message SMMCourse {
+    string title = 1;
+    string maker = 2;
+    enum GameStyle {
+        M1 = 1; // Super Mario Bros
+        M3 = 2; // Super Mario Bros 3
+        MW = 3; // Super Mario World
+        WU = 4; // New Super Mario Bros U
+        
+    }
+    GameStyle game_style = 3;
+    enum CourseTheme {
+        GROUND = 1;
+        UNDERGROUND = 2;
+        CASTLE = 3;
+        AIRSHIP = 4;
+        UNDERWATER = 5;
+        GHOUST_HOUSE = 6;
+    }
+    CourseTheme course_theme = 4;
+    repeated Block blocks = 5;
+}
