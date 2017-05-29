@@ -12,6 +12,17 @@ This repository is not meant to be a library for conversion between Wii U to 3DS
 
 Since the release of Nintendo Switch, it is only a matter of time when the official Nintendo servers will go offline. It will then only be possible with custom servers to share courses, either with homebrew apps or with Emulators (or in a best case scenario we would reverse engineer Nintendo Servers and just change the address the game uses).
 
+## Contribute
+
+Contributions are very welcome. Just fork the repo and make a pull request.
+
+You should only follow very few rules:
+
+- use proto3 syntax
+- messages and enums should be camelCase
+- variable names should be snake_case
+- naming convention should comply to [Super Mario Wiki](https://www.mariowiki.com)
+
 ## Links
 
 ### Wii U
