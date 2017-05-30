@@ -1,8 +1,8 @@
 syntax = 'proto3';
 
 message Block {
-    uint32 x = 1;
-    uint32 y = 2;
+    float x = 1;
+    float y = 2;
     uint32 dim_x = 3;
     uint32 dim_y = 4;
     enum BlockType {
