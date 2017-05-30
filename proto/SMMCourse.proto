@@ -20,5 +20,9 @@ message SMMCourse {
         GHOUST_HOUSE = 6;
     }
     CourseTheme course_theme = 4;
-    repeated Block blocks = 5;
+    uint32 start_y = 5;
+    uint32 finish_x = 6;
+    uint32 finish_y = 7;
+    repeated Block blocks = 8;
+    repeated Block blocks_sub = 9;
 }
