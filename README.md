@@ -10,7 +10,7 @@ These Protobuf files should give a file description that can both be used for ve
 
 This repository is not meant to be a library for conversion between Wii U to 3DS and vice versa. It should just give a guidance that everyone should comply to when importing and exporting courses from and to Wii U and/or 3DS.
 
-Since the release of Nintendo Switch, it is only a matter of time when the official Nintendo servers will go offline. It will then only be possible with custom servers to share courses, either with homebrew apps or with Emulators (or in a best case scenario we would reverse engineer Nintendo Servers and just change the address the game uses).
+Since the release of Nintendo Switch, it is only a matter of time when the official Nintendo servers will go offline. It will then only be possible with custom servers to share courses, either with homebrew apps or with Emulators (or in a best case scenario we would reverse engineer Nintendo Servers and just change the address the game uses). These custom servers should use the same serialization technique across all platforms. Protobuf is a language-neutral, platform-neutral, extensible mechanism to achieve this.
 
 ## Contribute
 
