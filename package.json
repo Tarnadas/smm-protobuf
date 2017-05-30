@@ -1,0 +1,29 @@
+{
+  "name": "smm-protobuf",
+  "version": "1.0.0",
+  "description": "Non-official Protobuf files for Super Mario Maker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarnadas/smm-protobuf.git"
+  },
+  "keywords": [
+    "smm",
+    "smmdb",
+    "wiiu",
+    "3ds",
+    "emulation",
+    "protobuf",
+    "super",
+    "mario",
+    "maker"
+  ],
+  "author": "Mario Reder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tarnadas/smm-protobuf/issues"
+  },
+  "homepage": "https://github.com/Tarnadas/smm-protobuf#readme",
+  "devDependencies": {
+    "protobufjs": "^6.7.3"
+  }
+}
