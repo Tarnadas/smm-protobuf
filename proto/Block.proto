@@ -8,6 +8,7 @@ message Block {
     enum BlockType {
         // TODO find out all block types and match their enum to their constant value
         // TODO check naming convention
+        UNKNOWN = 0;
         NORMAL = 4;
         QUESTIONMARK = 5;
         HARD = 6;
