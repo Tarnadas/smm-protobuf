@@ -59,22 +59,20 @@
       "nested": {
         "GameStyle": {
           "values": {
-            "UNKNOWN": 0,
-            "M1": 1,
-            "M3": 2,
-            "MW": 3,
-            "WU": 4
+            "M1": 0,
+            "M3": 1,
+            "MW": 2,
+            "WU": 3
           }
         },
         "CourseTheme": {
           "values": {
-            "UNKNOWN": 0,
-            "GROUND": 1,
-            "UNDERGROUND": 2,
-            "CASTLE": 3,
-            "AIRSHIP": 4,
-            "UNDERWATER": 5,
-            "GHOUST_HOUSE": 6
+            "GROUND": 0,
+            "UNDERGROUND": 1,
+            "CASTLE": 2,
+            "AIRSHIP": 3,
+            "UNDERWATER": 4,
+            "GHOUST_HOUSE": 5
           }
         }
       }
