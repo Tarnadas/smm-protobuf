@@ -19,7 +19,7 @@ message Block {
         KAIZO = 29;
         SPIKE = 43;
         ICE = 63;
-        
     }
     BlockType block_type = 5;
+    // TODO pipe target?
 }

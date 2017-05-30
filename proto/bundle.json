@@ -39,6 +39,21 @@
           "rule": "repeated",
           "type": "Block",
           "id": 9
+        },
+        "sounds": {
+          "rule": "repeated",
+          "type": "Sound",
+          "id": 10
+        },
+        "thumbnail": {
+          "rule": "repeated",
+          "type": "bytes",
+          "id": 11
+        },
+        "thumbnailPreview": {
+          "rule": "repeated",
+          "type": "bytes",
+          "id": 12
         }
       },
       "nested": {
@@ -101,6 +116,29 @@
             "KAIZO": 29,
             "SPIKE": 43,
             "ICE": 63
+          }
+        }
+      }
+    },
+    "Sound": {
+      "fields": {
+        "x": {
+          "type": "uint32",
+          "id": 1
+        },
+        "y": {
+          "type": "uint32",
+          "id": 2
+        },
+        "blockType": {
+          "type": "SoundType",
+          "id": 3
+        }
+      },
+      "nested": {
+        "SoundType": {
+          "values": {
+            "UNKNOWN": 0
           }
         }
       }
