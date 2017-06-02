@@ -26,45 +26,33 @@
           "type": "AutoScroll",
           "id": 6
         },
-        "startY": {
-          "type": "uint32",
-          "id": 7
-        },
-        "finishX": {
-          "type": "uint32",
-          "id": 8
-        },
-        "finishY": {
-          "type": "uint32",
-          "id": 9
-        },
         "blocks": {
           "rule": "repeated",
           "type": "Block",
-          "id": 10
+          "id": 7
         },
         "blocksSub": {
           "rule": "repeated",
           "type": "Block",
-          "id": 11
+          "id": 8
         },
         "sounds": {
           "rule": "repeated",
           "type": "Sound",
-          "id": 12
+          "id": 9
         },
         "soundsSub": {
           "rule": "repeated",
           "type": "Sound",
-          "id": 13
+          "id": 10
         },
         "thumbnail": {
           "type": "bytes",
-          "id": 14
+          "id": 11
         },
         "thumbnailPreview": {
           "type": "bytes",
-          "id": 15
+          "id": 12
         }
       },
       "nested": {
@@ -166,15 +154,15 @@
               "type": "uint32",
               "id": 12
             },
-            "containerMeta": {
+            "inknown_0": {
               "type": "uint32",
               "id": 13
             },
-            "unknown_0": {
+            "unknown_1": {
               "type": "uint32",
               "id": 14
             },
-            "unknown_1": {
+            "unknown_2": {
               "type": "uint32",
               "id": 15
             }
@@ -194,13 +182,19 @@
                 "FALLING": 21,
                 "CLOUD": 22,
                 "NOTE": 23,
+                "FINISH_PLATFORM": 26,
+                "FINISH": 27,
                 "KAIZO": 29,
                 "STAR": 35,
+                "START_PLATFORM": 37,
+                "WOODEN_ARROW": 38,
                 "BOO": 41,
                 "SPIKE": 43,
                 "SPECIAL": 44,
+                "FINISH_LINE": 49,
                 "TRACK": 59,
-                "ICE": 63
+                "ICE": 63,
+                "START": 69
               }
             },
             "EntityType": {

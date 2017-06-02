@@ -24,13 +24,19 @@ message Block {
             FALLING = 21; // @container
             CLOUD = 22;
             NOTE = 23; // @container
+            FINISH_PLATFORM = 26; // @unknown0
+            FINISH = 27; // @unknown0
             KAIZO = 29; // @container
             STAR = 35; // @living
+            START_PLATFORM = 37; // @unknown0
+            WOODEN_ARROW = 38; // @unknown0
             BOO = 41; // @living
             SPIKE = 43;
             SPECIAL = 44; // @living @costume
-            TRACK = 59; // @linkable @id @unknown0 @unknown1
+            FINISH_LINE = 49; // for castles
+            TRACK = 59; // @linkable @id @unknown1 @unknown2
             ICE = 63;
+            START = 69;
         }
         BlockType block_type = 7; // uint
         enum EntityType {
@@ -43,9 +49,9 @@ message Block {
         uint32 id = 10; // uint16 at offset 0x1A @id
         uint32 costume = 11; // uint8 at offset 0x1E and 0x1F @costume
         uint32 container = 12; // uint8 at offset 0x19 @container
-        uint32 container_meta = 13; // uint16 at offset 0x12 @container
-        uint32 unknown_0 = 14; // uint16 at offset 0x14 @unknown0
-        uint32 unknown_1 = 15; // uint16 at offset 0x16 @unknown1
+        uint32 inknown_0 = 13; // uint32 at offset 0x10 @unknown0
+        uint32 unknown_1 = 14; // uint16 at offset 0x14 @unknown1
+        uint32 unknown_2 = 15; // uint16 at offset 0x16 @unknown2
     }
     oneof payload {
         bytes block_data = 1; // for the lazy ones
