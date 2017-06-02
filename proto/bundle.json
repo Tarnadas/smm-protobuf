@@ -76,42 +76,119 @@
       }
     },
     "Block": {
+      "oneofs": {
+        "payload": {
+          "oneof": [
+            "blockData",
+            "blockDetails"
+          ]
+        }
+      },
       "fields": {
-        "x": {
-          "type": "float",
+        "blockData": {
+          "type": "bytes",
           "id": 1
         },
-        "y": {
-          "type": "float",
+        "blockDetails": {
+          "type": "BlockDetails",
           "id": 2
-        },
-        "dimX": {
-          "type": "uint32",
-          "id": 3
-        },
-        "dimY": {
-          "type": "uint32",
-          "id": 4
-        },
-        "blockType": {
-          "type": "BlockType",
-          "id": 5
         }
       },
       "nested": {
-        "BlockType": {
-          "values": {
-            "UNKNOWN": 0,
-            "NORMAL": 4,
-            "QUESTIONMARK": 5,
-            "HARD": 6,
-            "GROUND": 7,
-            "FALLING": 21,
-            "CLOUD": 22,
-            "NOTE": 23,
-            "KAIZO": 29,
-            "SPIKE": 43,
-            "ICE": 63
+        "BlockDetails": {
+          "fields": {
+            "x": {
+              "type": "float",
+              "id": 1
+            },
+            "y": {
+              "type": "float",
+              "id": 2
+            },
+            "dimX": {
+              "type": "uint32",
+              "id": 3
+            },
+            "dimY": {
+              "type": "uint32",
+              "id": 4
+            },
+            "orientation": {
+              "type": "uint32",
+              "id": 5
+            },
+            "zIndex": {
+              "type": "uint32",
+              "id": 6
+            },
+            "blockType": {
+              "type": "BlockType",
+              "id": 7
+            },
+            "entityType": {
+              "type": "EntityType",
+              "id": 8
+            },
+            "link": {
+              "type": "uint32",
+              "id": 9
+            },
+            "id": {
+              "type": "uint32",
+              "id": 10
+            },
+            "costume": {
+              "type": "uint32",
+              "id": 11
+            },
+            "container": {
+              "type": "uint32",
+              "id": 12
+            },
+            "containerMeta": {
+              "type": "uint32",
+              "id": 13
+            },
+            "unknown_0": {
+              "type": "uint32",
+              "id": 14
+            },
+            "unknown_1": {
+              "type": "uint32",
+              "id": 15
+            }
+          },
+          "nested": {
+            "BlockType": {
+              "values": {
+                "UNKNOWN": 0,
+                "NORMAL": 4,
+                "QUESTIONMARK": 5,
+                "HARD": 6,
+                "GROUND": 7,
+                "COIN": 8,
+                "PIPE": 9,
+                "BACKGROUND": 16,
+                "MUSHROOM": 20,
+                "FALLING": 21,
+                "CLOUD": 22,
+                "NOTE": 23,
+                "KAIZO": 29,
+                "STAR": 35,
+                "BOO": 41,
+                "SPIKE": 43,
+                "SPECIAL": 44,
+                "TRACK": 59,
+                "ICE": 63
+              }
+            },
+            "EntityType": {
+              "values": {
+                "STATIC": 0,
+                "LIVING": 1,
+                "PLATFORM": 65535
+              }
+            }
           }
         }
       }

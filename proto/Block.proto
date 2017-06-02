@@ -7,23 +7,26 @@ message Block {
         // start with origin (0,0)
         uint32 dim_x = 3; // uint8 at offset 0xA
         uint32 dim_y = 4; // uint8 at offset 0xB
-        uint32 orientation = 5; // uint8 >> 4 at offset 0xF
+        uint32 orientation = 5; // uint8 at offset 0xF
         uint32 z_index = 6; // uint16 at offset 0x6;
         enum BlockType {
             // TODO find out all block types and match their enum to their constant value
             // TODO check naming convention
             UNKNOWN = 0;
-            NORMAL = 4;
-            QUESTIONMARK = 5;
+            NORMAL = 4; // @container
+            QUESTIONMARK = 5; // @container
             HARD = 6;
             GROUND = 7;
+            COIN = 8;
             PIPE = 9; // @linkable @id
             BACKGROUND = 16; // @platform
-            FALLING = 21;
+            MUSHROOM = 20; // @living
+            FALLING = 21; // @container
             CLOUD = 22;
-            NOTE = 23;
-            KAIZO = 29;
-            BOO = 41; @living
+            NOTE = 23; // @container
+            KAIZO = 29; // @container
+            STAR = 35; // @living
+            BOO = 41; // @living
             SPIKE = 43;
             SPECIAL = 44; // @living @costume
             TRACK = 59; // @linkable @id @unknown0 @unknown1
@@ -32,15 +35,17 @@ message Block {
         BlockType block_type = 7; // uint
         enum EntityType {
             STATIC = 0;
-            LIVING = 1; @living
-            PLATFORM = 0xFFFF; @platform
+            LIVING = 1; // @living
+            PLATFORM = 65535; // @platform 0xFFFF
         }
         EntityType entity_type = 8; // uint16 at offset 0x4
-        uint32 link = 8; // uint8 >> 4 at offset 0xD @linkable
-        uint32 id = 9; // uint16 at offset 0x1A @id
-        uint32 costume = 10; // uint16 at offset 0x1E @costume
-        uint32 unknown_0 = 11; // uint16 at offset 0x14 @unknown0
-        uint32 unknown_1 = 12; // uint16 at offset 0x16 @unknown1
+        uint32 link = 9; // uint8 at offset 0xD @linkable
+        uint32 id = 10; // uint16 at offset 0x1A @id
+        uint32 costume = 11; // uint8 at offset 0x1E and 0x1F @costume
+        uint32 container = 12; // uint8 at offset 0x19 @container
+        uint32 container_meta = 13; // uint16 at offset 0x12 @container
+        uint32 unknown_0 = 14; // uint16 at offset 0x14 @unknown0
+        uint32 unknown_1 = 15; // uint16 at offset 0x16 @unknown1
     }
     oneof payload {
         bytes block_data = 1; // for the lazy ones
