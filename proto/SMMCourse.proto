@@ -10,7 +10,7 @@ message SMMCourse {
         WU = 3; // New Super Mario Bros U
         
     }
-    GameStyle game_style = 3;
+    GameStyle game_style = 3; // string at offset 0x6A
     enum CourseTheme {
         GROUND = 0;
         UNDERGROUND = 1;
@@ -19,13 +19,21 @@ message SMMCourse {
         UNDERWATER = 4;
         GHOUST_HOUSE = 5;
     }
-    CourseTheme course_theme = 4;
-    uint32 start_y = 5;
-    uint32 finish_x = 6;
-    uint32 finish_y = 7;
-    repeated Block blocks = 8;
-    repeated Block blocks_sub = 9;
-    repeated Sound sounds = 10;
-    bytes thumbnail = 11; // jpeg wide
-    bytes thumbnail_preview = 12; // jpeg 4:3
+    CourseTheme course_theme = 4; // uint8 at offset 0x6D
+    uint32 time = 5; // uint16 at offset 0x70
+    enum AutoScroll {
+        DISABLED = 0;
+        SLOW = 1;
+        MEDIUM = 2;
+        FAST = 3;
+    }
+    AutoScroll auto_scroll = 6; // uint8 at offset 0x72, enabled flag uint8 at offset 0x73
+    uint32 start_y = 7;
+    uint32 finish_x = 8;
+    uint32 finish_y = 9;
+    repeated Block blocks = 10;
+    repeated Block blocks_sub = 11;
+    repeated Sound sounds = 12;
+    bytes thumbnail = 13; // jpeg wide
+    bytes thumbnail_preview = 14; // jpeg 4:3
 }
