@@ -53,13 +53,18 @@
           "type": "Sound",
           "id": 12
         },
+        "soundsSub": {
+          "rule": "repeated",
+          "type": "Sound",
+          "id": 13
+        },
         "thumbnail": {
           "type": "bytes",
-          "id": 13
+          "id": 14
         },
         "thumbnailPreview": {
           "type": "bytes",
-          "id": 14
+          "id": 15
         }
       },
       "nested": {

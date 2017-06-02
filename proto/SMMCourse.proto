@@ -34,6 +34,7 @@ message SMMCourse {
     repeated Block blocks = 10;
     repeated Block blocks_sub = 11;
     repeated Sound sounds = 12;
-    bytes thumbnail = 13; // jpeg wide
-    bytes thumbnail_preview = 14; // jpeg 4:3
+    repeated Sound sounds_sub = 13;
+    bytes thumbnail = 14; // jpeg wide
+    bytes thumbnail_preview = 15; // jpeg 4:3
 }
