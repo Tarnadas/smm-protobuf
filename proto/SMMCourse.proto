@@ -20,20 +20,22 @@ message SMMCourse {
         GHOUST_HOUSE = 5;
     }
     CourseTheme course_theme = 4; // uint8 at offset 0x6D
-    uint32 time = 5; // uint16 at offset 0x70
+    CourseTheme course_theme_sub = 5;
+    uint32 time = 6; // uint16 at offset 0x70
     enum AutoScroll {
         DISABLED = 0;
         SLOW = 1;
         MEDIUM = 2;
         FAST = 3;
     }
-    AutoScroll auto_scroll = 6; // uint8 at offset 0x72
-    uint32 width = 7; // uint16 at offset 0x76
-    uint32 widthSub = 8;
-    repeated Block blocks = 9;
-    repeated Block blocks_sub = 10;
-    repeated Sound sounds = 11;
-    repeated Sound sounds_sub = 12;
-    bytes thumbnail = 13; // jpeg wide
-    bytes thumbnail_preview = 14; // jpeg 4:3
+    AutoScroll auto_scroll = 7; // uint8 at offset 0x72
+    AutoScroll auto_scroll_sub = 8; // uint8 at offset 0x72
+    uint32 width = 9; // uint16 at offset 0x76
+    uint32 widthSub = 10;
+    repeated Block blocks = 11;
+    repeated Block blocks_sub = 12;
+    repeated Sound sounds = 13;
+    repeated Sound sounds_sub = 14;
+    bytes thumbnail = 15; // jpeg wide
+    bytes thumbnail_preview = 16; // jpeg 4:3
 }
