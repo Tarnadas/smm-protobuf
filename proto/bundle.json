@@ -30,33 +30,37 @@
           "type": "uint32",
           "id": 7
         },
-        "blocks": {
-          "rule": "repeated",
-          "type": "Block",
+        "widthSub": {
+          "type": "uint32",
           "id": 8
         },
-        "blocksSub": {
+        "blocks": {
           "rule": "repeated",
           "type": "Block",
           "id": 9
         },
-        "sounds": {
+        "blocksSub": {
           "rule": "repeated",
-          "type": "Sound",
+          "type": "Block",
           "id": 10
         },
-        "soundsSub": {
+        "sounds": {
           "rule": "repeated",
           "type": "Sound",
           "id": 11
         },
+        "soundsSub": {
+          "rule": "repeated",
+          "type": "Sound",
+          "id": 12
+        },
         "thumbnail": {
           "type": "bytes",
-          "id": 12
+          "id": 13
         },
         "thumbnailPreview": {
           "type": "bytes",
-          "id": 13
+          "id": 14
         }
       },
       "nested": {

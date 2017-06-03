@@ -29,10 +29,11 @@ message SMMCourse {
     }
     AutoScroll auto_scroll = 6; // uint8 at offset 0x72
     uint32 width = 7; // uint16 at offset 0x76
-    repeated Block blocks = 8;
-    repeated Block blocks_sub = 9;
-    repeated Sound sounds = 10;
-    repeated Sound sounds_sub = 11;
-    bytes thumbnail = 12; // jpeg wide
-    bytes thumbnail_preview = 13; // jpeg 4:3
+    uint32 widthSub = 8;
+    repeated Block blocks = 9;
+    repeated Block blocks_sub = 10;
+    repeated Sound sounds = 11;
+    repeated Sound sounds_sub = 12;
+    bytes thumbnail = 13; // jpeg wide
+    bytes thumbnail_preview = 14; // jpeg 4:3
 }
