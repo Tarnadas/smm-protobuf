@@ -26,33 +26,37 @@
           "type": "AutoScroll",
           "id": 6
         },
-        "blocks": {
-          "rule": "repeated",
-          "type": "Block",
+        "width": {
+          "type": "uint32",
           "id": 7
         },
-        "blocksSub": {
+        "blocks": {
           "rule": "repeated",
           "type": "Block",
           "id": 8
         },
-        "sounds": {
+        "blocksSub": {
           "rule": "repeated",
-          "type": "Sound",
+          "type": "Block",
           "id": 9
         },
-        "soundsSub": {
+        "sounds": {
           "rule": "repeated",
           "type": "Sound",
           "id": 10
         },
+        "soundsSub": {
+          "rule": "repeated",
+          "type": "Sound",
+          "id": 11
+        },
         "thumbnail": {
           "type": "bytes",
-          "id": 11
+          "id": 12
         },
         "thumbnailPreview": {
           "type": "bytes",
-          "id": 12
+          "id": 13
         }
       },
       "nested": {
