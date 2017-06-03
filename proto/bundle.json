@@ -234,7 +234,7 @@
           "type": "uint32",
           "id": 2
         },
-        "blockType": {
+        "soundType": {
           "type": "SoundType",
           "id": 3
         }

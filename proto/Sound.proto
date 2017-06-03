@@ -1,12 +1,12 @@
 syntax = 'proto3';
 
 message Sound {
-    uint32 x = 1;
-    uint32 y = 2;
+    uint32 x = 1; // uint8 at offset 3
+    uint32 y = 2; // uint8 at offset 4
     enum SoundType {
         // TODO find out all sound types and match their enum to their constant value
         UNKNOWN = 0;
         
     }
-    SoundType block_type = 3;
+    SoundType sound_type = 3; // uint8 at offset 0
 }
