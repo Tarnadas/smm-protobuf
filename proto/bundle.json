@@ -237,6 +237,10 @@
         "soundType": {
           "type": "SoundType",
           "id": 3
+        },
+        "variation": {
+          "type": "bool",
+          "id": 4
         }
       },
       "nested": {

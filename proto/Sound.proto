@@ -9,4 +9,5 @@ message Sound {
         
     }
     SoundType sound_type = 3; // uint8 at offset 0
+    bool variation = 4; // bool at offset 2
 }
