@@ -42,14 +42,14 @@
           "type": "uint32",
           "id": 10
         },
-        "blocks": {
+        "tiles": {
           "rule": "repeated",
-          "type": "Block",
+          "type": "Tile",
           "id": 11
         },
-        "blocksSub": {
+        "tilesSub": {
           "rule": "repeated",
-          "type": "Block",
+          "type": "Tile",
           "id": 12
         },
         "sounds": {
@@ -100,27 +100,27 @@
         }
       }
     },
-    "Block": {
+    "Tile": {
       "oneofs": {
         "payload": {
           "oneof": [
-            "blockData",
-            "blockDetails"
+            "tileData",
+            "tileDetails"
           ]
         }
       },
       "fields": {
-        "blockData": {
+        "tileData": {
           "type": "bytes",
           "id": 1
         },
-        "blockDetails": {
-          "type": "BlockDetails",
+        "tileDetails": {
+          "type": "TileDetails",
           "id": 2
         }
       },
       "nested": {
-        "BlockDetails": {
+        "TileDetails": {
           "fields": {
             "x": {
               "type": "float",
@@ -146,8 +146,8 @@
               "type": "uint32",
               "id": 6
             },
-            "blockType": {
-              "type": "BlockType",
+            "tileType": {
+              "type": "TileType",
               "id": 7
             },
             "entityType": {
@@ -184,7 +184,7 @@
             }
           },
           "nested": {
-            "BlockType": {
+            "TileType": {
               "values": {
                 "UNKNOWN": 0,
                 "NORMAL": 4,
@@ -235,7 +235,7 @@
           "id": 2
         },
         "soundType": {
-          "type": "SoundType",
+          "type": "uint32",
           "id": 3
         },
         "variation": {
