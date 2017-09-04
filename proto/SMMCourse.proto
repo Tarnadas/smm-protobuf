@@ -1,7 +1,7 @@
 syntax = 'proto3';
 
 message SMMCourse {
-    uint64 modified = 1; // unix timestamp, because that weird format they use doesn't provide information about timezone
+    uint64 modified = 1; // unix timestamp
     string title = 2;
     string maker = 3;
     enum GameStyle {
@@ -39,4 +39,5 @@ message SMMCourse {
     repeated Sound sounds_sub = 15;
     bytes thumbnail = 16; // jpeg wide
     bytes thumbnail_preview = 17; // jpeg 4:3
+    Header header = 18; // full 0xF0 header
 }

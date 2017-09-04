@@ -1,9 +1,9 @@
 {
   "name": "smm-protobuf",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Non-official Protobuf files for Super Mario Maker",
   "scripts": {
-    "compile": "pbjs -t json ./proto/SMMCourse.proto ./proto/Tile.proto ./proto/Sound.proto > ./proto/bundle.json"
+    "compile": "pbjs -t json ./proto/SMMCourse.proto ./proto/Header.proto ./proto/Tile.proto ./proto/Sound.proto > ./proto/bundle.json"
   },
   "repository": {
     "type": "git",

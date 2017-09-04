@@ -73,6 +73,10 @@
         "thumbnailPreview": {
           "type": "bytes",
           "id": 17
+        },
+        "header": {
+          "type": "Header",
+          "id": 18
         }
       },
       "nested": {
@@ -100,6 +104,26 @@
             "SLOW": 1,
             "MEDIUM": 2,
             "FAST": 3
+          }
+        }
+      }
+    },
+    "Header": {
+      "fields": {
+        "type": {
+          "type": "HeaderType",
+          "id": 1
+        },
+        "data": {
+          "type": "bytes",
+          "id": 2
+        }
+      },
+      "nested": {
+        "HeaderType": {
+          "values": {
+            "WIIU": 0,
+            "N3DS": 1
           }
         }
       }
