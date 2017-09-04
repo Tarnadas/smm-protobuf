@@ -39,5 +39,4 @@ message SMMCourse {
     repeated Sound sounds_sub = 15;
     bytes thumbnail = 16; // jpeg wide
     bytes thumbnail_preview = 17; // jpeg 4:3
-    Header header = 18; // full 0xF0 header
 }
